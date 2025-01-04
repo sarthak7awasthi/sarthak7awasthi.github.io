@@ -1,0 +1,152 @@
+.canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: var(--bg-color);
+}
+
+.card {
+  background-color: var(--card-bg-color);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px var(--shadow-color);
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--heading-color);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: var(--text-color);
+  margin: auto;
+  border-radius: 5px;
+  padding: 2%;
+  margin-top: 200px;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px); /* Frosted-glass effect for better readability */
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.company {
+  font-weight: bold;
+  color: var(--company-color);
+}
+
+.aboutContainer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vw;
+  min-height: 60vh;
+  margin: auto;
+  color: var(--text-color);
+}
+
+.educationContainer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 90%;
+  min-height: 80%;
+  margin: auto;
+  color: var(--text-color);
+}
+
+.profilePicture {
+  margin: 0 auto 20px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid var(--icon-hover-color); /* Adds a border with theme accent color */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Subtle shadow for better visibility */
+}
+
+.profilePicture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--text-color);
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4); /* Improved text visibility */
+}
+
+h2 {
+  margin-top: 100px;
+  font-size: 2rem;
+  color: var(--text-color);
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4); /* Better visibility for headings */
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: var(--text-color);
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4); /* Subtle shadow for subtitles */
+}
+
+.contact {
+  margin: 20px 0;
+}
+
+.icon {
+  margin: 0 10px;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s;
+  font-size: 1.8rem; /* Increased icon size for better visibility */
+}
+
+.icon:hover {
+  color: var(--icon-hover-color);
+  transform: scale(1.1); /* Slight scaling on hover for better interaction */
+}
+
+.education {
+  margin-top: 20px;
+}
+
+.educationItem {
+  margin: 10px 0;
+  font-size: 1.2rem; /* Increased font size */
+  color: var(--subtitle-color);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Subtle shadow for list items */
+  font-weight: 500;
+  line-height: 1.6; /* Improved readability */
+}
+
+@media (min-width: 768px) {
+  .educationContainer {
+    width: 720px; /* Set a specific width for larger screens */
+    max-width: 800px; /* Optional: Limit the maximum width */
+  }
+}
